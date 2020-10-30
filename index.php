@@ -6,7 +6,7 @@ $dbname = "sql7373522";
 
 $conn= new mysqli($servername,$username,$password,$dbname);  
 $sql ="select * from pracownicy"; 
-echo("<h3>ZAD.1</h3>"); 
+echo("<h3>zadanie1</h3>"); 
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
 echo ("<tr><th>id_pracownicy</th><th>imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th></tr>"); 
