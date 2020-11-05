@@ -26,15 +26,15 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
     
-    $sql ="select avg(zarobki) from pracownicy where imie not like '%a'"; 
+    $sql ="select avg(zarobki) from pracownicy where imie not like '%a' having avg(zarobki)<35"; 
 echo("<h3>zadanie1</h3>"); 
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo ("</th><th>imie</th><th>avg(zarobki)</th><th>"); 
+echo ("<th>avg(zarobki)</th>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
-  echo("<td>".$row['imie']."</td><td>".$row['avg(zarobki)']."</td>");     
+  echo("<td>".$row['avg(zarobki)']."</td>");     
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
