@@ -1,3 +1,9 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+</html>
+
 <?php 
 $servername = "sql7.freemysqlhosting.net"; 
 $username = "sql7373522"; 
