@@ -43,7 +43,7 @@ echo('</table>');
 echo("<h3>zadanie2</h3>"); 
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo ("<th>avg(zarobki)</th>"); 
+echo ("<tr><th>avg(zarobki)</th></tr>"); 
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
