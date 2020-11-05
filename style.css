@@ -13,3 +13,10 @@ th {
   background-color: blue;
   color: white;
 }
+table {
+  width: 50%;
+}
+
+th {
+  height: 70px;
+}
