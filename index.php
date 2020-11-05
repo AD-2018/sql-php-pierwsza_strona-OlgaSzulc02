@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a herf=https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02>github</a>
+  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
   <h1>Olga Szulc</h1>
 
 <?php 
