@@ -9,3 +9,7 @@ h1 {
 table {
   border-collapse: collapse;
 }
+th {
+  background-color: blue;
+  color: white;
+}
