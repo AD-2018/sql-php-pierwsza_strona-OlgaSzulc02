@@ -1,3 +1,15 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pracownicy i Organizacja</h1>
+  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
+  
+    <div class="nav">
+      <a href="index.php">Strona Główna</a>
+  </div>
+
 <?php 
 $servername = "sql7.freemysqlhosting.net"; 
 $username = "sql7373522"; 
@@ -31,3 +43,5 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
 ?>
+  </body>
+</html>
