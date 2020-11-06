@@ -3,8 +3,12 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Olga Szulc</h1>
   <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
-  <h1>Olga Szulc</h1>
+  
+    <div class="nav">
+      <a href="pracownicy_organizacja.php">Pracownicy i organizacja</a>
+  </div>
 
 <?php 
 $servername = "sql7.freemysqlhosting.net"; 
