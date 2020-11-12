@@ -54,7 +54,7 @@ echo ("<tr><th>nazwa_dzial</th><th>avg(zarobki)</th></tr>");
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
-  echo("<td>".$row['nazwa_dzial']."</td><td>".$row['avg(zarobki);     
+  echo("<td>".$row['nazwa_dzial']."</td><td>".$row['avg(zarobki)']."</td>");    
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
