@@ -8,7 +8,8 @@
   
     <div class="nav">
       <a href="pracownicy_organizacja.php">Pracownicy i organizacja</a><br>
-      <a href="funkcje_agregujace.php">Funkcje Agregujące</a>
+      <a href="funkcje_agregujace.php">Funkcje Agregujące</a><br>
+      <a href="data_i_czas.php">Data i Czas</a>
       </div>
 
 <?php 
