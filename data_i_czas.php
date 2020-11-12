@@ -30,7 +30,20 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
-    
+      
+    $sql ="select imie,year(curdate())-year(data_urodzenia) as wiek from pracownicy where (dzial=1)"; 
+echo("<h3>Wiek poszczególnych pracowników z działu serwis</h3>");
+    echo("<li>".$sql);
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>imie</th><th>wiek</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['imie']."</td><td>".$row['wiek']."</td>");     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
 ?>
   </body>
 </html>
