@@ -8,7 +8,8 @@
   
     <div class="nav">
       <a href="pracownicy_organizacja.php">Pracownicy i organizacja</a>
-  </div>
+      <a href="funkcje_agregujace.php">Funkcje Agregujące</a>
+      </div>
 
 <?php 
 $servername = "sql7.freemysqlhosting.net"; 
