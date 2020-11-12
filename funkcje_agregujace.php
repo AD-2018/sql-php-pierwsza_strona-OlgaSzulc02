@@ -68,7 +68,7 @@ echo ("<tr><th>nazwa_dzial</th><th>sum(zarobki)</th></tr>");
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
-  echo("<td>".$row['imie']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("<td>".$row['nazwa_dzial']."</td><td>".$row['sum(zarobki)']."</td>");     
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
