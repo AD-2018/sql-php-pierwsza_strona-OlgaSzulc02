@@ -44,6 +44,20 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
+    
+    $sql ="select nazwa_dzial, avg(zarobki) from pracownicy,organizacja where id_org=dzial group by nazwa_dzial"; 
+echo("<h3>Średnie zarobków w poszczególnych działach </h3>");
+    echo("<li>".$sql);
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>nazwa_dzial</th><th>avg(zarobki)</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['nazwa_dzial']."</td><td>".$row['avg(zarobki);     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
 ?>
   </body>
-  </html>
+</html>
