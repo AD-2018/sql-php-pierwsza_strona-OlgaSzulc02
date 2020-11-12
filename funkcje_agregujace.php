@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Funkcje agregujące (group bu, having)</h1>
+    <h1>Funkcje agregujące (group by, having)</h1>
   <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
   
     <div class="nav">
