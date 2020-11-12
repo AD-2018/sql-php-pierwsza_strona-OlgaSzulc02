@@ -46,7 +46,7 @@ while($row=mysqli_fetch_assoc($result)){
 echo('</table>'); 
     
           
-    $sql ="select imie,sum(year(curdate())-year(data_urodzenia) as suma_lat from pracownicy"; 
+    $sql ="select imie,sum(year(curdate())-year(data_urodzenia)) as suma_lat from pracownicy"; 
 echo("<h3>Suma lat wszystkich pracowników </h3>");
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
