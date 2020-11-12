@@ -30,6 +30,20 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
+    
+    $sql ="select nazwa_dzial, count(imie) from pracownicy,organizacja where id_org=dzial group by nazwa_dzial"; 
+echo("<h3>Ilość pracowników w poszczególnych działach</h3>");
+    echo("<li>".$sql);
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>nazwa_dzial</th><th>count(imie)</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['nazwa_dzial']."</td><td>".$row['count(imie)']."</td>");     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
 ?>
   </body>
   </html>
