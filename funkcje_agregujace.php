@@ -59,7 +59,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
             
-    $sql ="select nazwa_dzial,sum(zarobki) from pracownicy,organizacja where id_org=dzial group by nazwa_dzial having<28"; 
+    $sql ="select nazwa_dzial,sum(zarobki) from pracownicy,organizacja where id_org=dzial group by nazwa_dzial having sum(zarobki)<28"; 
 echo("<h3>Suma zarobków w poszczególnych działach mniejsza od 28 </h3>"); 
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
