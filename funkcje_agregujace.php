@@ -18,7 +18,8 @@ $dbname = "sql7374844";
 
 $conn= new mysqli($servername,$username,$password,$dbname);  
 $sql ="select nazwa_dzial, sum(zarobki) from pracownicy,organizacja where id_org=dzial group by nazwa_dzial"; 
-echo("<h3>Suma zarobków w poszczególnych działach </h3>"); 
+echo("<h3>Suma zarobków w poszczególnych działach </h3>");
+    echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
 echo ("<tr><th>nazwa_dzial</th><th>sum(zarobki)</th></tr>"); 
