@@ -17,7 +17,7 @@ $password = "6cxJ7qTmxi";
 $dbname = "sql7374844";  
 
 $conn= new mysqli($servername,$username,$password,$dbname);  
-$sql ="select year(curdate())-year(data_urodzenia) from as wiek pracownicy"; 
+$sql ="select year(curdate())-year(data_urodzenia) as wiek from pracownicy"; 
 echo("<h3>Suma zarobków w poszczególnych działach </h3>");
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
