@@ -86,6 +86,20 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
+     
+    $sql ="select count(imie),nazwa_dzial from pracownicy,organizacja where id_org=dzial group by nazwa_dzial having count(imie)>3"; 
+echo("<h3>Ilość pracowników w poszczególnych działach większa od 3  </h3>"); 
+       echo("<li>".$sql);
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>count(imie)</th><th>nazwa_dzial</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['count(imie)']."</td><td>".$row['nazwa_dzial']."</td>");     
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
 ?>
   </body>
 </html>
