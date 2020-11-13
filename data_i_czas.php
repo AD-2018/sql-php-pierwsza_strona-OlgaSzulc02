@@ -73,7 +73,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("</tr>"); } 
 echo('</table>'); 
     
-    $sql ="select sum(year(curdate())-year(data_urodzenia)) as suma_lat from pracownicy where imie like '%a'"; 
+       $sql ="select sum(year(curdate())-year(data_urodzenia)) as suma_lat from pracownicy where imie like '%a'"; 
 echo("<h3>Suma lat kobiet</h3>");
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
@@ -86,7 +86,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
-
+        
         $sql ="select sum(year(curdate())-year(data_urodzenia)) as suma_lat from pracownicy where imie not like '%a'"; 
 echo("<h3>Suma lat mężczyzn</h3>");
     echo("<li>".$sql);
@@ -114,8 +114,8 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
-        
-        $sql ="select nazwa_dzial,sum(year(curdate())-year(data_urodzenia)) as suma_lat from pracownicy,organizacja where id_org=dzial group by nazwa_dzial"; 
+    
+            $sql ="select nazwa_dzial,sum(year(curdate())-year(data_urodzenia)) as suma_lat from pracownicy,organizacja where id_org=dzial group by nazwa_dzial"; 
 echo("<h3>Suma lat pracowników w poszczególnych działach</h3>");
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
@@ -128,7 +128,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
-            
+                
         $sql ="select nazwa_dzial,max(year(curdate())-year(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial group by dzial"; 
 echo("<h3>Najstarsi pracownicy w każdym dziale</h3>");
     echo("<li>".$sql);
@@ -142,8 +142,8 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
-            
-        $sql ="select nazwa_dzial,min(year(curdate())-year(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial and (nazwa_dzial="handel" or nazwa_dzial="serwis") group by dzial"; 
+                
+        $sql ="select nazwa_dzial,min(year(curdate())-year(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial and (nazwa_dzial='handel' or nazwa_dzial='serwis') group by nazwa_dzial"; 
 echo("<h3>Najmłodsi pracownicy z działu: handel i serwis</h3>");
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
@@ -156,8 +156,8 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
-               
-        $sql ="select imię,nazwa_dzial,min(year(curdate())-year(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial and (nazwa_dzial="handel" or nazwa_dzial="serwis") group by dzial"; 
+                   
+        $sql ="select imie,nazwa_dzial,min(year(curdate())-year(data_urodzenia)) as wiek from pracownicy,organizacja where id_org=dzial and (nazwa_dzial='handel' or nazwa_dzial='serwis') group by nazwa_dzial"; 
 echo("<h3>Najmłodsi pracownicy z imienia z działu: handel i serwis</h3>");
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
@@ -197,7 +197,7 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<td>".$row['imie']."</td>");     
   echo("<tr>"); 
   echo("</tr>"); } 
-echo('</table>'); 
+echo('</table>');  
 ?>
   </body>
 </html>
