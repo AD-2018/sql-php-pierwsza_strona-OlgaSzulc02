@@ -112,7 +112,7 @@ echo ("<tr><th>count(imie)</th></tr>");
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
-  echo("<td>".$row['count(imie))']."</td>");     
+  echo("<td>".$row['count(imie)']."</td>");     
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
