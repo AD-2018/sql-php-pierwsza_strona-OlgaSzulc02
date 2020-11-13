@@ -22,7 +22,7 @@ echo("<h3>Pracownicy z nazwą działu</h3>");
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>');
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -36,7 +36,7 @@ echo("<h3>Pracownicy tylko z działu 1 i 4</h3>");
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>');
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -50,7 +50,7 @@ echo("<h3>Lista kobiet z nazwami działów</h3>");
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>');
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -64,7 +64,7 @@ echo("<h3>Lista mężczyzn z nazwami działów</h3>");
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>');
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -80,7 +80,7 @@ echo("<h3>Pracownicy posortowani malejąco wg imienia </h3>");
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>');
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -94,7 +94,7 @@ echo("<h3>- Pracownicy z działu 3 posortowani rosnąco po imieniu</h3>");
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>');
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -108,7 +108,7 @@ echo("<h3>Kobiety posortowane rosnąco po imieniu</h3>");
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>');
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -122,7 +122,7 @@ echo("<h3>Kobiety z działu 1 i 3 posortowane rosnąco po zarobkach</h3>");
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>'); 
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -136,7 +136,7 @@ echo("<h3>Mężczyźni posortowani rosnąco: po nazwie działu a następnie po w
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>'); 
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -152,7 +152,7 @@ echo('</table>');
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>');
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -167,7 +167,7 @@ $sql = "select * from pracownicy, organizacja where id_org=dzial and (imie like 
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>');
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
@@ -181,7 +181,7 @@ echo("<h3>Najstarszy pracownik</h3>");
        echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);  
 echo('<table border="1" class="tabela"'); 
-echo('<th>Imie</th><th>zarobki</th><th>dzial</th>');
+echo('<tr><th>Imie</th><th>zarobki</th><th>dzial</th></tr>');
 while($row=mysqli_fetch_assoc($result)){ 
   echo("<tr>");     
   echo("<tr>");     
