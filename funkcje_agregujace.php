@@ -58,6 +58,34 @@ while($row=mysqli_fetch_assoc($result)){
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
+        
+    $sql ="select sum(zarobki), if((imie like '%a'), 'Kobiety','Mężczyźni') as 'plec' from pracownicy group by plec"; 
+echo("<h3>Suma zarobków kobiet i mężczyzn</h3>");
+    echo("<li>".$sql);
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>sum(zarobki)</th><th>plec</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['sum(zarobki)']."</td><td>".$row['plec']."</td>");    
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
+        
+    $sql ="select avg(zarobki), if((imie like '%a'), 'Kobiety','Mężczyźni') as 'plec' from pracownicy group by plec"; 
+echo("<h3>Średnia zarobków kobiet i mężczyzn</h3>");
+    echo("<li>".$sql);
+$result = mysqli_query($conn, $sql);  
+echo('<table border="1" class="tabela"'); 
+echo ("<tr><th>avg(zarobki)</th><th>plec</th></tr>"); 
+while($row=mysqli_fetch_assoc($result)){ 
+  echo("<tr>");     
+  echo("<tr>");     
+  echo("<td>".$row['avg(zarobki)']."</td><td>".$row['plec']."</td>");    
+  echo("<tr>"); 
+  echo("</tr>"); } 
+echo('</table>'); 
             
     $sql ="select nazwa_dzial,sum(zarobki) from pracownicy,organizacja where id_org=dzial group by nazwa_dzial having sum(zarobki)<28"; 
 echo("<h3>Suma zarobków w poszczególnych działach mniejsza od 28 </h3>"); 
