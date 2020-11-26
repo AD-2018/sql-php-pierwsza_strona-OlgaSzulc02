@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 //definiujemy zapytanie $sql
-$sql = "DELETE FROM Pracownik WHERE id= $_POST['id'];";
+$sql = "DELETE FROM Pracownik WHERE id=.$_POST['id'];";
 
 //wyświetlamy zapytanie $sql
 echo $sql;
