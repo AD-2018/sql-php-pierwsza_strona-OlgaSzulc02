@@ -2,10 +2,10 @@
 echo("Insert");
 echo $_POST['name'];
 
-$servername = "mysql-mateusz.alwaysdata.net"; 
-$username = "mateusz"; 
-$password = "Strona123"; 
-$dbname = "mateusz_kus";    
+$servername = ""; 
+$username = ""; 
+$password = ""; 
+$dbname = "";    
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
