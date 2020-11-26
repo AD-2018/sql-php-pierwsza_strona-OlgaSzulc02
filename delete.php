@@ -1,6 +1,6 @@
 <?php
 echo("Delete<br>");
-echo $_POST['id'];
+echo $_POST['id_pracownicy'];
 
 
 $servername = "sql7.freemysqlhosting.net"; 
@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "DELETE FROM pracownicy WHERE id=".$_POST['id'];
+$sql = "DELETE FROM pracownicy WHERE id=".$_POST['id_pracownicy'];
 
 echo $sql;
 
