@@ -2,17 +2,17 @@
 echo("Insert");
 echo $_POST['name'];
 
-$servername = ""; 
-$username = ""; 
-$password = ""; 
-$dbname = "";    
+$servername = "sql7.freemysqlhosting.net"; 
+$username = "sql7374844"; 
+$password = "6cxJ7qTmxi"; 
+$dbname = "sql7374844";    
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO pracownicy (id,imie, dzial, zarobki,data_urodzenia) 
+$sql = "INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki,data_urodzenia) 
        VALUES (null,'".$_POST['name']."', 1, 76,'1991-11-21')";
 
 echo "<li>".$sql;
