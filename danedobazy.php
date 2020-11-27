@@ -12,7 +12,7 @@
   </div>
 <h3>dodawanie pracownika</h3>
 <form action="insert.php" method="POST">
-			<label>Id:</label><input type="text" name="id_pracownicy"><br>
+
 				
 			<label>Imie:</label><input type="text" name="imie"><br>
 	
