@@ -12,15 +12,22 @@
   </div>
 <h3>dodawanie pracownika</h3>
 <form action="insert.php" method="POST">
-			<label>Imie:</label><input type="text" name="imie"><br>
-			<label>Dzial:</label><input type="text" name="dzial"></br>
-			<label>Zarobki:</label><input type="text" name="zarobki"></br>
-			<label>Data urodzenia:</label><input type="text" name="data_urodzenia"></br>
+			<label>Id:</label><input type="text" name="id_pracownicy" class="myInput" style="margin: 1rem;
+				/* padding: 1rem; */><br>
+			<label>Imie:</label><input type="text" name="imie" class="myInput" style="margin: 1rem;
+				/* padding: 1rem; */><br>
+			<label>Dzial:</label><input type="text" name="dzial" class="myInput" style="margin: 1rem;
+				/* padding: 1rem; */></br>
+			<label>Zarobki:</label><input type="text" name="zarobki" class="myInput" style="margin: 1rem;
+				/* padding: 1rem; */></br>
+			<label>Data urodzenia:</label><input type="text" name="data_urodzenia" class="myInput" style="margin: 1rem;
+				/* padding: 1rem; */></br>
 			<input type="submit" value="dodaj pracownika">
 </form>
 <h3>usuwanie pracownika</h3>
 <form action="delete.php" method="POST">
-	<label>Podaj id:</label>  <input type="number" name="id_pracownicy"></br>
+	<label>Podaj id:</label>  <input type="number" name="id_pracownicy" class="myInput" style="margin: 1rem;
+				/* padding: 1rem; */></br>
    <input type="submit" value="usuń pracownika">
 </form>
 <?php
