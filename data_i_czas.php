@@ -12,12 +12,7 @@
   </div>
 
 <?php 
-$servername = "sql7.freemysqlhosting.net"; 
-$username = "sql7374844"; 
-$password = "6cxJ7qTmxi"; 
-$dbname = "sql7374844";  
-
-$conn= new mysqli($servername,$username,$password,$dbname);  
+require_once("connect.php");
 $sql ="select imie,year(curdate())-year(data_urodzenia) as wiek from pracownicy"; 
 echo("<h3>Wiek poszczególnych pracowników </h3>");
     echo("<li>".$sql);
