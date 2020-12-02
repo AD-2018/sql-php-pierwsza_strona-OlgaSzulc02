@@ -15,12 +15,7 @@
       </div>
 
 <?php 
-$servername = "sql7.freemysqlhosting.net"; 
-$username = "sql7374844"; 
-$password = "6cxJ7qTmxi"; 
-$dbname = "sql7374844";    
-
-$conn= new mysqli($servername,$username,$password,$dbname);  
+require_once("connect.php");
     echo("<h2>Podstawowe</h2>"); 
 $sql ="select * from pracownicy"; 
 echo("<h3>tabelka</h3>"); 
