@@ -2,17 +2,7 @@
 echo("Delete<br>");
 echo $_POST['id_pracownicy'];
 
-
-$servername = "sql7.freemysqlhosting.net"; 
-$username = "sql7374844"; 
-$password = "6cxJ7qTmxi"; 
-$dbname = "sql7374844";    
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
+require_once("connect.php");
 
 $sql = "DELETE FROM pracownicy WHERE id=".$_POST['id_pracownicy'];
 
