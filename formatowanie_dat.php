@@ -11,12 +11,7 @@
   </div>
 
 <?php 
-$servername = "sql7.freemysqlhosting.net"; 
-$username = "sql7374844"; 
-$password = "6cxJ7qTmxi"; 
-$dbname = "sql7374844";  
-
-$conn= new mysqli($servername,$username,$password,$dbname);  
+require_once("connect.php");
     
  $sql = "select imie, date_format(data_urodzenia, '%W-%m-%Y') as data from pracownicy";
 echo("<h3>Wyświetl nazwy dni w dacie urodzenia</h3>");
