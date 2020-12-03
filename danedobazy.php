@@ -47,7 +47,7 @@ echo('<td>'.$row['id_pracownicy'].'</td><td>'.$row['imie'].'</td><td>'.$row['zar
 '<td>
 <form action="delete.php" method="POST">
 <input name="id" value="'.$row['id_pracownicy'].'" hidden>
-<input type="submit" value="Usuń pracownika">
+<input type="submit" value="usuń pracownika">
 </form>
 </td>');
   echo("<tr>"); 
