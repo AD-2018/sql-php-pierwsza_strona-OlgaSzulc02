@@ -19,9 +19,7 @@ table {
 
 th {
   height: 70px;
-}
-a {
-  text-decoration: none;
-  background-color: blue;
-  padding: 1rem;
+} 
+
+tr:hover {background-color: white;
 }
