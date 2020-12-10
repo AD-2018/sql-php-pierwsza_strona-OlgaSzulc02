@@ -16,12 +16,12 @@
 
 <?php 
 require_once("connect.php");
-echo('<select name="kolor">');
+echo("<select name="lista pracowników">");
 	while($row = mysqli_fetch_assoc($result)) {
-echo("<option>.$row['id_pracownicy'].$row['imie'].$row['dzial'].$row['zarobki'].$row['data_urodzenia']);
+echo("<option>.$row['id_pracownicy'].$row['imie'].$row['dzial'].$row['zarobki'].$row['data_urodzenia']");
 	};
-echo('</select>)');
-echo ('<br>')
+echo("</select>)");
+echo ("<br>")
     echo("<h2>Podstawowe</h2>"); 
 $sql ="select * from pracownicy"; 
 echo("<h3>tabelka</h3>"); 
