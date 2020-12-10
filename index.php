@@ -18,7 +18,7 @@
 require_once("connect.php");
 echo('<select name="kolor">');
 	while($row = mysqli_fetch_assoc($result)) {
-echo("<option>$row['id_pracownicy'].' '.$row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial'].' '.$row['nazwa_dzial']</option>");
+echo("<option>.$row['id_pracownicy'].$row['imie'].$row['dzial'].$row['zarobki'].$row['data_urodzenia']);
 	};
 echo('</select>)');
 echo ('<br>')
