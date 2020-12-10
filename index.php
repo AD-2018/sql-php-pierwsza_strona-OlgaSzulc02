@@ -16,7 +16,15 @@
 
 <?php 
 require_once("connect.php");
-
+echo("<h3>Lista pracowników</h3>");
+$sql ="select * from pracownicy"; 
+$result = mysqli_query($conn, $sql);
+if ( $result) {
+        echo ("<br>");
+    } else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+    
     echo("<h2>Podstawowe</h2>"); 
 $sql ="select * from pracownicy"; 
 echo("<h3>tabelka</h3>"); 
