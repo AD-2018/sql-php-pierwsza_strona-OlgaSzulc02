@@ -16,6 +16,12 @@
 
 <?php 
 require_once("connect.php");
+echo('<select name="kolor">');
+	while($row = mysqli_fetch_assoc($result)) {
+echo("<option>$row['id_pracownicy'].' '.$row['imie'].' '.$row['zarobki'].' '.$row['data_urodzenia'].' '.$row['dzial'].' '.$row['nazwa_dzial']</option>");
+	};
+echo('</select>)');
+echo ('<br>')
     echo("<h2>Podstawowe</h2>"); 
 $sql ="select * from pracownicy"; 
 echo("<h3>tabelka</h3>"); 
