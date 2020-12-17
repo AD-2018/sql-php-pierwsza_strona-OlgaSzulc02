@@ -11,7 +11,7 @@
 <?php 
 require_once("connect.php");
   echo("<h3>Biblioteka</h3>"); 
-$sql = "select biblAutor_biblTytul as id_at, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where autor=biblAutor_id and tytul=biblTytul_id";
+$sql = "select biblAutor_id, biblTytul_id, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where autor=biblAutor_id and tytul=biblTytul_id";
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);
 echo('<table border="1" class="tabela"'); 
@@ -19,7 +19,7 @@ echo('<table border="1" class="tabela"');
         while ($row = mysqli_fetch_assoc($result)) {
   echo("<tr>");     
   echo("<tr>");   
- echo ('<td>'.$row["id_at"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["biblWypoz"].'</td>');
+ echo ('<td>'.$row["biblAutor_id"].'</td><td>'.$row["biblTytul_id"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["biblWypoz"].'</td>');
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
