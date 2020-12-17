@@ -10,16 +10,16 @@
     </div>
 <?php 
 require_once("connect.php");
-  echo("<h3>Biblioteka</h3>"); 
-$sql = "select biblAutor_id, biblTytul_id, autor, tytul, biblWypoz from biblAutor_biblTytul,biblAutor,biblTytul where autor=biblAutor_id and tytul=biblTytul_id";
+  echo("<h3>Tytuły</h3>"); 
+$sql = "select * from biblTytul";
     echo("<li>".$sql);
 $result = mysqli_query($conn, $sql);
 echo('<table border="1" class="tabela"'); 
-    echo ("<tr><th>id</th><th>autor</th><th>tytul</th><th>wypozyczenia</th></tr>");
+    echo ("<tr><th>id</th><th>tytul</th></tr>");
         while ($row = mysqli_fetch_assoc($result)) {
   echo("<tr>");     
   echo("<tr>");   
- echo ('<td>'.$row["biblAutor_id"].'</td><td>'.$row["biblTytul_id"].'</td><td>'.$row["autor"].'</td><td>'.$row["tytul"].'</td><td>'.$row["biblWypoz"].'</td>');
+ echo ('<td>'.$row["id"].'</td><td>'.$row["tytul"].'</td>');
   echo("<tr>"); 
   echo("</tr>"); } 
 echo('</table>'); 
