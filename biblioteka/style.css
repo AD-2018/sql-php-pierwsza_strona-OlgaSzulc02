@@ -1,0 +1,25 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  background-color: blue;
+  color: white;
+}
+table {
+  width: 50%;
+}
+
+th {
+  height: 70px;
+} 
+
+tr:hover {background-color: white;
+}
