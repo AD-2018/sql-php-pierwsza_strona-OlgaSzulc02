@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
+        <title>Olga Szulc</title>
 </head>
 <body>
     <h1>Olga Szulc</h1>
