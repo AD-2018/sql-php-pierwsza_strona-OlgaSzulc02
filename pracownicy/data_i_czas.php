@@ -7,7 +7,7 @@
   <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
   
     <div class="nav">
-      <a href="index.php">Strona Główna</a><br>
+      <a href="../index.php">Strona Główna</a><br>
       <a href="formatowanie_dat.php">Formatowanie Dat</a>
   </div>
 
