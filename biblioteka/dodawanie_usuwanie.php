@@ -1,13 +1,25 @@
-<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dodawanie i Usuwanie</title>
 </head>
 <body>
 	  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a><br>
 	  <div class="nav">
       <a href="../index.php">Strona Główna</a>
-    </div>
+  </div>
+<h3>dodawanie ksiązki i autora</h3>
+<form action="insert.php" method="POST">
+
+				
+			<label>Imię i nazwisko:</label><input type="text" name="imie"><br>
+	
+			<label>Tytuł:</label><input type="text" name="tytul"></br>
+				
+			<input type="submit" value="dodaj">
+</form>
 <?php 
 	require_once("connect.php");
 $sql = "select (biblTytul_biblAutor.id) as ID_TAB, autor, tytul, biblWypoz from biblTytul_biblAutor,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id order by autor,ID_TAB asc";
@@ -43,3 +55,4 @@ echo('</table>');
 	
 		
 ?> 
+
