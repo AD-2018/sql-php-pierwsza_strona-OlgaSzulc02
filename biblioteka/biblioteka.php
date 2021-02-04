@@ -7,6 +7,7 @@
 	  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a><br>
 	  <div class="nav">
       <a href="../index.php">Strona Główna</a>
+		  <a href="usuwanie_dodawanie.php">Dodawanie i Usuwanie</a>
     </div>
 <?php 
 	require_once("connect.php");
