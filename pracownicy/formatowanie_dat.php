@@ -11,7 +11,7 @@
   </div>
 
 <?php 
-require_once("connect.php");
+require_once("../connect.php");
     
  $sql = "select imie, date_format(data_urodzenia, '%W-%m-%Y') as data from pracownicy";
 echo("<h3>Wyświetl nazwy dni w dacie urodzenia</h3>");
