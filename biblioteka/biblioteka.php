@@ -27,7 +27,7 @@ echo('</select>');
 echo ('<br>');
 	
 	
-require_once("connect.php");
+require_once("../connect.php");
   echo("<h3>Tytuły</h3>"); 
 $sql = "select * from biblTytul";
     echo("<li>".$sql);
