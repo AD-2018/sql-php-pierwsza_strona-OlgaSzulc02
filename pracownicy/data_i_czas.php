@@ -12,7 +12,7 @@
   </div>
 
 <?php 
-require_once("connect.php");
+require_once("../connect.php");
 $sql ="select imie,year(curdate())-year(data_urodzenia) as wiek from pracownicy"; 
 echo("<h3>Wiek poszczególnych pracowników </h3>");
     echo("<li>".$sql);
