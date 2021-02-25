@@ -31,7 +31,7 @@
    <input type="submit" value="usuń pracownika">
 </form>
 <?php
-require_once("connect.php");
+require_once("../connect.php");
     echo("<h2>Podstawowe</h2>"); 
 $sql ="select * from pracownicy"; 
 echo("<h3>tabelka</h3>"); 
