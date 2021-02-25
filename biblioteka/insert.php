@@ -1,6 +1,6 @@
 <?php
 echo("Insert");
-require_once("connect.php");
+require_once("../connect.php");
 
 $sql1 = "INSERT INTO biblAutor (imie) 
        VALUES (".'"'.$_POST['imie'].'"'.')';
