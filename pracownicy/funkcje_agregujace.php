@@ -11,7 +11,7 @@
   </div>
 
 <?php 
-require_once("connect.php");
+require_once("../connect.php");
    echo("<h1>sum,avg,count</h1>"); 
     
 $sql ="select sum(zarobki) from pracownicy"; 
