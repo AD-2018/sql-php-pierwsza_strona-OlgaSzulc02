@@ -14,7 +14,7 @@ $sql = "DELETE FROM pracownicy WHERE id_pracownicy=".$_POST['id_pracownicy'];
 echo $sql;
 
 if ($conn->query($sql) === TRUE) {
-    header('Location: https://olga-szulc.herokuapp.com/danedobazy.php');
+    header('Location: https://bazy-danych.herokuapp.com/pracownicy/danedobazy.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
