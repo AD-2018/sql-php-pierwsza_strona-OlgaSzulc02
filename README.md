@@ -1,1 +1,1 @@
-<a href="https://olga-szulc.herokuapp.com/">Moja strona</a>
+<a href="https://bazy-danych.herokuapp.com/">Moja strona</a>
