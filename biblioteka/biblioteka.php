@@ -10,7 +10,7 @@
 		  <a href="usuwanie_dodawanie.php">Dodawanie i Usuwanie</a>
     </div>
 <?php 
-	require_once("connect.php");
+	require_once("../connect.php");
 $sql = "select (biblTytul_biblAutor.id) as ID_TAB, autor, tytul, biblWypoz from biblTytul_biblAutor,biblAutor,biblTytul where biblAutor.id=biblAutor_id and biblTytul.id=biblTytul_id order by autor,ID_TAB asc";
 $result = mysqli_query($conn, $sql);
 if ( $result) {
