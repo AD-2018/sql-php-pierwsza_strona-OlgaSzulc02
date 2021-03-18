@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: cyan;
+    padding: 5px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "a b c"
+    "a d c"
+    "a e c";
+}
+header {
+    background-color: darkblue;
+    grid-area: a;
+}
+nav { 
+    background-color: darkmagenta;
+    grid-area: b;
+}
+main {
+    background-color: darksalmon;
+    grid-area: c;
+}
+aside{
+    background-color: gold;
+    grid-area: d;
+}
+footer{
+    background-color: linen;
+    grid-area: e;
+}
