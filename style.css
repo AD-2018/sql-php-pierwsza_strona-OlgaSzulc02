@@ -1,11 +1,25 @@
+h1 {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #9baaf0;
+}
+
+a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #032ff3;
+}
 body {
   background-color: lightblue;
 }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
-}
 table {
   border-collapse: collapse;
 }
