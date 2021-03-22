@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    background-color: #31d6a5;
+    animation: tlo 80s infinite;
+}
+
+@keyframes tlo {
+    0% {
+        background-color: #b0d0ff;
+    }
+    12.5% {
+        background-color: #c5b0ff;
+    }
+    25% {
+        background-color: #d5b0ff;
+    }
+    37.5% {
+        background-color: #ffb0d1;
+    }
+    50% {
+        background-color: #ffb0b0;
+    }
+    62.5% {
+        background-color: #ffddb0;
+    }
+    75% {
+        background-color: #e7ffb0;
+    }
+    87.5% {
+        background-color: #b0ffd4;
+    }
+    100% {
+        background-color: #b0d9ff;
+    }
+}
+
+h1 {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #9baaf0;
+}
+
+li a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #032ff3;
+}
+
+
