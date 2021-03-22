@@ -62,11 +62,11 @@ a {
     padding: 5px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas: 
-    "a b b b"
-    "a d d c"
-    "a e f c";
+    "a b b"
+    "a d d"
+    "a e e";
 }
 header {
     background-color: rgb(255, 0, 0);
@@ -78,11 +78,7 @@ nav {
     grid-area: b;
     margin: 5px;
 }
-main {
-    background-color: rgb(252, 110, 63);
-    grid-area: c;
-    margin: 5px;
-}
+
 aside{
     background-color: rgb(0, 153, 255);
     grid-area: d;
@@ -91,10 +87,5 @@ aside{
 footer{
     background-color: rgb(239, 255, 10);
     grid-area: e;
-    margin: 5px;
-}
-p {
-    background-color: rgb(239, 255, 10);
-    grid-area: f;
     margin: 5px;
 }

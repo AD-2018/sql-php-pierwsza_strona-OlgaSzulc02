@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: #31d6a5;
-    animation: tlo 80s infinite;
+    animation: tlo 10s infinite;
 }
 
 @keyframes tlo {
@@ -12,13 +12,13 @@ body {
         background-color: #c5b0ff;
     }
     25% {
-        background-color: #d5b0ff;
+        background-color: #bd8af8;
     }
     37.5% {
         background-color: #ffb0d1;
     }
     50% {
-        background-color: #ffb0b0;
+        background-color: #ff98f6;
     }
     62.5% {
         background-color: #ffddb0;
@@ -43,7 +43,7 @@ h1 {
     background-color: #9baaf0;
 }
 
-li a {
+a {
     float: left;
     display: block;
     color: #ffffff;

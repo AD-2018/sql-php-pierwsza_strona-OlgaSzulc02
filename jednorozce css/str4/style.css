@@ -62,11 +62,11 @@ a {
     padding: 5px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas: 
-    "a b b b"
-    "a d d c"
-    "a e f c";
+    "b b b"
+    "a d c"
+    "a e e";
 }
 header {
     background-color: rgb(255, 0, 0);
@@ -91,10 +91,5 @@ aside{
 footer{
     background-color: rgb(239, 255, 10);
     grid-area: e;
-    margin: 5px;
-}
-p {
-    background-color: rgb(239, 255, 10);
-    grid-area: f;
     margin: 5px;
 }

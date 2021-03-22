@@ -2,34 +2,94 @@
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: sans-serif;
+    background-color: #31d6a5;
+    animation: tlo 10s infinite;
+}
+
+@keyframes tlo {
+    0% {
+        background-color: #b0d0ff;
+    }
+    12.5% {
+        background-color: #c5b0ff;
+    }
+    25% {
+        background-color: #bd8af8;
+    }
+    37.5% {
+        background-color: #ffb0d1;
+    }
+    50% {
+        background-color: #ff98f6;
+    }
+    62.5% {
+        background-color: #ffddb0;
+    }
+    75% {
+        background-color: #e7ffb0;
+    }
+    87.5% {
+        background-color: #b0ffd4;
+    }
+    100% {
+        background-color: #b0d9ff;
+    }
+}
+
+h1 {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #9baaf0;
+}
+
+a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #032ff3;
+}
+
 .container {
     background-color: rgb(0, 225, 255);
     padding: 5px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
-    "a b b b"
-    "a d d c"
-    "a e e c";
+    "a b c"
+    "a d c"
+    "a e c";
 }
 header {
     background-color: rgb(255, 0, 0);
     grid-area: a;
+    margin: 5px;
 }
 nav { 
     background-color: rgb(68, 248, 14);
     grid-area: b;
+    margin: 5px;
 }
 main {
     background-color: rgb(252, 110, 63);
     grid-area: c;
+    margin: 5px;
 }
 aside{
     background-color: rgb(0, 153, 255);
     grid-area: d;
+    margin: 5px;
 }
 footer{
     background-color: rgb(239, 255, 10);
     grid-area: e;
+    margin: 5px;
 }
