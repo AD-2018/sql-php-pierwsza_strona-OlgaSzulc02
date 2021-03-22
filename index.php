@@ -15,11 +15,10 @@
         <a href="inne/formularz.html">Formularz</a>
         <a href="biblioteka/biblioteka.php">Biblioteka</a>
         <a href="pracownicy/danedobazy.php">Dodawanie i usuwanie</a>
-        <a href="jednorozce css/index.html">Jednorozce str głowna</a>
+        <a href="jednorozce css/index.html">Jednorozce str głowna</a><br>
       </div>
 
 <?php 
-        <br>
         $hostname = $_SERVER['HTTP_HOST'];
 echo("<li> hostname: ".$hostname."</li>");
         
