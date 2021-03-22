@@ -1,12 +1,12 @@
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Dodawanie i Usuwanie</title>
 </head>
 <body>
-	  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a><br>
+	  <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
 	  <div class="nav">
       <a href="../index.php">Strona Główna</a>
   </div>

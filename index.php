@@ -19,7 +19,7 @@
       </div>
 
 <?php 
-        
+        <br>
         $hostname = $_SERVER['HTTP_HOST'];
 echo("<li> hostname: ".$hostname."</li>");
         

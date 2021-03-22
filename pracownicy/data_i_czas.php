@@ -1,13 +1,13 @@
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <h1>Data i Czas</h1>
   <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
   
     <div class="nav">
-      <a href="../index.php">Strona Główna</a><br>
+      <a href="../index.php">Strona Główna</a>
       <a href="formatowanie_dat.php">Formatowanie Dat</a>
   </div>
 
