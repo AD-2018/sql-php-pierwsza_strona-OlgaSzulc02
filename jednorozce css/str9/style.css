@@ -62,11 +62,12 @@ a {
     padding: 5px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 2fr 3fr 1fr;
     grid-template-areas: 
-    "a b c"
-    "a d c"
-    "a e c";
+    "b b b"
+    "a d f"
+    "a d f"
+    "e e e";
 }
 .p1 {
     background-color: rgb(255, 0, 0);
@@ -91,5 +92,10 @@ a {
 .p5{
     background-color: rgb(239, 255, 10);
     grid-area: e;
+    margin: 5px;
+}
+.p6 {
+    background-color: rgb(0, 153, 255);
+    grid-area: f;
     margin: 5px;
 }

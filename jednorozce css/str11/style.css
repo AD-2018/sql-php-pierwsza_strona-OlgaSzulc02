@@ -64,9 +64,9 @@ a {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-template-areas: 
-    "a b c"
-    "a d c"
-    "a e c";
+    "a a b"
+    "a a c"
+    "a a d";
 }
 .p1 {
     background-color: rgb(255, 0, 0);
@@ -84,12 +84,7 @@ a {
     margin: 5px;
 }
 .p4{
-    background-color: rgb(0, 153, 255);
-    grid-area: d;
-    margin: 5px;
-}
-.p5{
     background-color: rgb(239, 255, 10);
-    grid-area: e;
+    grid-area: d;
     margin: 5px;
 }

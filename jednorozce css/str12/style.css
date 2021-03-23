@@ -62,11 +62,11 @@ a {
     padding: 5px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
     grid-template-areas: 
-    "a b c"
-    "a d c"
-    "a e c";
+    "a a b b c"
+    "d e e f g"
+    "h h i i g";
 }
 .p1 {
     background-color: rgb(255, 0, 0);
@@ -79,7 +79,7 @@ a {
     margin: 5px;
 }
 .p3 {
-    background-color: rgb(252, 110, 63);
+    background-color: rgb(68, 248, 14);
     grid-area: c;
     margin: 5px;
 }
@@ -89,7 +89,30 @@ a {
     margin: 5px;
 }
 .p5{
-    background-color: rgb(239, 255, 10);
+    background-color: rgb(226, 10, 255);
     grid-area: e;
     margin: 5px;
 }
+
+.p6{
+    background-color: rgb(0, 153, 255);
+    grid-area: f;
+    margin: 5px;
+}
+.p7{
+    background-color: rgb(252, 110, 63);
+    grid-area: g;
+    margin: 5px;
+}
+
+.p8{
+    background-color: rgb(102, 8, 211);
+    grid-area: h;
+    margin: 5px;
+}
+.p9{
+    background-color: rgb(239, 255, 10);
+    grid-area: i;
+    margin: 5px;
+}
+
