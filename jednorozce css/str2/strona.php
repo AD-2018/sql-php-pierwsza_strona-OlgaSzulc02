@@ -16,7 +16,7 @@
         <div class="p1">
             <?php
             require_once("../../connect.php");
-            $sql = "select Klasa, `Imie-Nazwisko`, (`WDW`.ID) as ID_TAB from `olgaszulc_pbd`.WDW, `olgaszulc_pbd`.Klasa, `olgaszulc_pbd`.Osoby where Osoby.ID=osoby_id and Klasa.ID=klasa_id order by ID_TAB asc";
+            $sql = "select Klasa, `ImieNazwisko`, (`WDW`.ID) as ID_TAB from `olgaszulc_pbd`.WDW, `olgaszulc_pbd`.Klasa, `olgaszulc_pbd`.Osoby where Osoby.ID=osoby_id and Klasa.ID=klasa_id order by ID_TAB asc";
                 if ($conn->connect_error) {
                         die("Connection failed: " . $conn->connect_error);
                  }
