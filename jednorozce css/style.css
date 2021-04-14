@@ -55,3 +55,8 @@ a  {
     width: 5em;
 }
 
+.zdjecie {
+left: 150px;
+top: 250px;
+position: absolute;
+}
