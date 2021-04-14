@@ -69,6 +69,7 @@
         ?>
         </div>
         <div class="p3">
+            <?php
             require_once("../../connect.php");
             $sql = "SELECT * FROM Klasa";
             
