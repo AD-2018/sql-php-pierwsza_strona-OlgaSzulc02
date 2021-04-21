@@ -28,7 +28,7 @@ if ($_POST['tabela']=="WDW"){
 }
 
 if ($conn->query($sql) === TRUE) {
-    header('Location: https://bazy-danych.herokuapp.com/jednorozce%20css/index.html');
+    header('Location: https://bazy-danych.herokuapp.com/jednorozce%20css/index.php');
 echo $sql;
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;

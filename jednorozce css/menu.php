@@ -1,8 +1,8 @@
 <nav> 
     <div class="nav">
     <strong>
-        <a class="git" href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a></li>
-        <a href="../index.php">Strona główna</a></li>
+        <a class="git" href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a></br>
+        <a href="../index.php">Strona główna</a></br>
         <a href="https://bazy-danych.herokuapp.com/jednorozce%20css/str1/strona.html">Strona 1</a></br>
         <a href="https://bazy-danych.herokuapp.com/jednorozce%20css/str2/strona.php">Strona 2</a></br>
         <a href="https://bazy-danych.herokuapp.com/jednorozce%20css/str3/strona.php">Strona 3</a></br>
