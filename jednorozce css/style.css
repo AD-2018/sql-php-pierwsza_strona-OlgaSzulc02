@@ -43,24 +43,19 @@ h1 {
     background-color: #9baaf0;
 }
 
-nav div li a {
+.gridLink {
+    float: left;
     display: block;
-    margin: 2px;
-    border-radius: 4em;
-    width: 5em;
-    color: rgb(255, 255, 255);
-    padding: 8px 16px;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    background-color: rgb(6, 22, 247);
+    background-color: #1801e9;
 }
 
-nav div li {
-    list-style-type: none;
-    margin-left: 5px;
-    padding: 0;
-    width: 200px;
-    background-color: #000000;
-    margin-top: 10px;
+.gridLink:hover {
+    background-color: #09bd96;
+    color: #ffffff;
 }
 
 .git {
