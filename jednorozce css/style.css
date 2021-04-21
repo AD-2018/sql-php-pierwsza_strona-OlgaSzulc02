@@ -43,16 +43,28 @@ h1 {
     background-color: #9baaf0;
 }
 
-a  {   
+nav div li a {
     display: block;
-    background-color: rgb(6, 22, 247);
-    color: rgb(255, 255, 255);
     margin: 2px;
     border-radius: 4em;
-    padding: 1em;
-    text-decoration: none;
-    transition-duration: 1ms;
     width: 5em;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: rgb(6, 22, 247);
+}
+
+nav div li {
+    list-style-type: none;
+    margin-left: 5px;
+    padding: 0;
+    width: 200px;
+    background-color: #000000;
+    margin-top: 10px;
+}
+
+.git {
+    background-color: #6f40f1;
 }
 
 .zdjecie {
