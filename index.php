@@ -15,7 +15,7 @@
         <a href="inne/formularz.html">Formularz</a>
         <a href="biblioteka/biblioteka.php">Biblioteka</a>
         <a href="pracownicy/danedobazy.php">Dodawanie i usuwanie</a>
-        <a href="jednorozce css/index.html">Jednorozce str głowna</a><br>
+        <a href="jednorozce css/index.php">Jednorozce str głowna</a><br>
       </div>
 
 <?php 
