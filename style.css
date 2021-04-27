@@ -37,3 +37,74 @@ th {
 
 tr:hover {background-color: white;
 }
+
+ /*menu tworzone na praktykach*/
+ ol {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    font-size:18px;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+  }
+
+
+      ol > li {
+        float:left;
+        background-color:#032ff3;
+        width:150px;
+        margin-left:1px;
+        height:2em;
+      }
+
+      ol a {
+        display:block;
+        text-decoration:none;
+        color:#000;
+        padding:0 5px;
+      }
+
+      ol > li > a:hover {
+        color:#09C;
+      }
+      
+      ol > li:hover {
+        background-color:#EEE;
+      }
+
+      ol > li:first-child {
+        margin-left:0;
+      }
+
+      ol > li > ul {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        display: none;
+      }
+
+      ol > li > ul > li > a {
+        border-top:1px solid #FFF;
+      }
+
+      ol > li > ul > li {
+        background-color:#EEE;
+        position:relative;
+      }
+      
+      ol > li > ul > li:hover {
+        background-color:rgb(255, 255, 255);
+      }
+      
+      ol > li > ul > li:hover a {
+        color:#09C;
+      }
+
+      ol > li:hover > ul {
+        display:block;
+      }
+
+      ol > li:hover > a {
+        color:#09C;
+      }
