@@ -43,6 +43,12 @@ h1 {
     background-color: #9baaf0;
 }
 
+.zdjecie {
+    display: flex;
+    align-items: center;
+}
+
+
 ol {
     list-style-type:none;
     padding:0;
