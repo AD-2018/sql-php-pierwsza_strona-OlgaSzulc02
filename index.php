@@ -5,19 +5,7 @@
 </head>
 <body>
     <h1>Olga Szulc</h1>
-  
-  
-    <div class="nav">
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
-      <a href="pracownicy/pracownicy_organizacja.php">Pracownicy i organizacja</a>
-      <a href="pracownicy/funkcje_agregujace.php">Funkcje Agregujące</a>
-      <a href="pracownicy/data_i_czas.php">Data i Czas</a>
-        <a href="inne/formularz.html">Formularz</a>
-        <a href="biblioteka/biblioteka.php">Biblioteka</a>
-        <a href="pracownicy/danedobazy.php">Dodawanie i usuwanie</a>
-        <a href="jednorozce css/index.php">Jednorozce str głowna</a><br>
-      </div>
-
+  <?php include"menu.php" ?>
 <?php 
         $hostname = $_SERVER['HTTP_HOST'];
 echo("<li> hostname: ".$hostname."</li>");
