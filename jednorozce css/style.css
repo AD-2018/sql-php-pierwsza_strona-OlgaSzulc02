@@ -43,27 +43,72 @@ h1 {
     background-color: #9baaf0;
 }
 
-.gridLink {
-    float: left;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #1801e9;
-}
+ol {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    font-size:18px;
+    height:2em;
+    line-height:2em;
+    text-align:center;
+  }
 
-.gridLink:hover {
-    background-color: #09bd96;
-    color: #ffffff;
-}
 
-.git {
-    background-color: #6f40f1;
-}
+      ol > li {
+        float:left;
+        background-color:#FDD700;
+        width:150px;
+        margin-left:1px;
+        height:2em;
+      }
 
-.zdjecie {
-left: 150px;
-top: 250px;
-position: absolute;
-}
+      ol a {
+        display:block;
+        text-decoration:none;
+        color:#000;
+        padding:0 5px;
+      }
+
+      ol > li > a:hover {
+        color:#09C;
+      }
+      
+      ol > li:hover {
+        background-color:#EEE;
+      }
+
+      ol > li:first-child {
+        margin-left:0;
+      }
+
+      ol > li > ul {
+        list-style-type:none;
+        padding:0;
+        margin:0;
+        display: none;
+      }
+
+      ol > li > ul > li > a {
+        border-top:1px solid #FFF;
+      }
+
+      ol > li > ul > li {
+        background-color:#EEE;
+        position:relative;
+      }
+      
+      ol > li > ul > li:hover {
+        background-color:rgb(255, 255, 255);
+      }
+      
+      ol > li > ul > li:hover a {
+        color:#09C;
+      }
+
+      ol > li:hover > ul {
+        display:block;
+      }
+
+      ol > li:hover > a {
+        color:#09C;
+      }
