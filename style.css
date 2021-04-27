@@ -7,15 +7,6 @@ h1 {
   background-color: #9baaf0;
 }
 
-a {
-  float: left;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 15px;
-  text-decoration: none;
-  background-color: #032ff3;
-}
 body {
   background-color: lightblue;
 }
