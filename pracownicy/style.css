@@ -1,0 +1,59 @@
+h1 {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #9baaf0;
+}
+
+body {
+    background: red;
+    animation-name: moja_animacja;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    font-family:sans-serif;
+ }
+
+ @keyframes moja_animacja {
+    0% {background: red;}
+    10% {background: rgb(255, 81, 0);}
+    20% {background: rgb(255, 251, 0);}   
+    30% {background: rgb(136, 255, 0);}   
+    40% {background: rgb(43, 255, 0);}   
+    50% {background: rgb(0, 255, 128);}   
+    60% {background: rgb(0, 255, 255);}   
+    70% {background: rgb(0, 89, 255);}   
+    80% {background: rgb(47, 0, 255);}   
+    90% {background: rgb(225, 0, 255);}
+    100% {background: rgb(255, 0, 85);}       
+ }
+
+ table {
+     border-collapse: collapse;
+     width: 20%;
+ }
+
+ th {
+     background-color: rgb(1, 0, 14);
+     color: rgb(217, 193, 240);
+     height: 70px;
+ }
+
+ tr:hover {
+     background-color: white;
+ }
+
+ h3 {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    background-color: #FDD700;
+   }
