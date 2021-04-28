@@ -32,7 +32,11 @@
                 echo("<th>ID</th><th>Nauczyciel</th><th>Klasa</th>");
                     while($row = mysqli_fetch_assoc($result)) {
                         echo("<tr>");
-                        echo("<td>".$row['ID_TAB']."</td><td>".$row['ImieNazwisko']."</td><td>".$row['Klasa']."</td>");
+                        echo("<td>".$row['ID_TAB']."</td><td>".$row['ImieNazwisko']."</td><td>".$row['Klasa']."</td><td> <form action="delete.php" method="POST">
+                 <input name="id" value="'.$row['ID_TAB'].'" hidden>
+                 <input type="submit" value="Usuń">
+                 </form>
+                 </td>');");
                         echo("</tr>");
                     };
                 echo("</table>");
@@ -69,7 +73,11 @@
                 echo("<th>ID</th><th>Imię i Nazwisko</th>");
                     while($row = mysqli_fetch_assoc($result)) {
                         echo("<tr>");
-                        echo("<td>".$row['ID']."</td><td>".$row['ImieNazwisko']."</td>");
+                        echo("<td>".$row['ID']."</td><td>".$row['ImieNazwisko']."</td><td> <form action="delete.php" method="POST">
+                 <input name="id" value="'.$row['id'].'" hidden>
+                 <input type="submit" value="Usuń">
+                 </form>
+                 </td>');");
                         echo("</tr>");
                     };
                 echo("</table>");
