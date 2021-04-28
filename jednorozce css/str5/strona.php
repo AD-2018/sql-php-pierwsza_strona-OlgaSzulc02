@@ -6,11 +6,7 @@
 </head>
     <body>
      <h1>Olga Szulc</h1>
-         <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-OlgaSzulc02">github</a>
-  
-        <div class="nav">
-            <a href="../../index.php">Strona główna</a>
-            <a href="../index.html">Cofnij</a>
+<?php include"menu2.php" ?>
             
       <div class="container">
             <div class="p1">
